@@ -309,17 +309,26 @@ type Function struct {
 	FreeVars  []*FreeVar    // free variables whose values must be supplied by closure
 	Locals    []*Alloc      // local variables of this function
 	Blocks    []*BasicBlock // basic blocks of the function; nil => external
+	Exit      *BasicBlock   // The function's exit block
 	Recover   *BasicBlock   // optional; control transfers here after recovered panic
 	AnonFuncs []*Function   // anonymous functions directly beneath this one
 	referrers []Instruction // referring instructions (iff Parent() != nil)
 
 	// The following fields are set transiently during building,
 	// then cleared.
-	currentBlock *BasicBlock             // where to emit code
-	objects      map[types.Object]Value  // addresses of local variables
-	namedResults []*Alloc                // tuple of named results
-	targets      *targets                // linked stack of branch targets
-	lblocks      map[*ast.Object]*lblock // labelled blocks
+	currentBlock    *BasicBlock             // where to emit code
+	objects         map[types.Object]Value  // addresses of local variables
+	namedResults    []*Alloc                // tuple of results
+	implicitResults []*Alloc                // tuple of results
+	targets         *targets                // linked stack of branch targets
+	lblocks         map[*ast.Object]*lblock // labelled blocks
+}
+
+func (fn *Function) results() []*Alloc {
+	if len(fn.namedResults) > 0 {
+		return fn.namedResults
+	}
+	return fn.implicitResults
 }
 
 // BasicBlock represents an SSA basic block.
