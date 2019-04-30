@@ -2023,11 +2023,8 @@ start:
 		// panic is treated like an ordinary function call.
 		v := Defer{pos: s.Defer}
 		b.setCall(fn, s.Call, &v.Call)
+		fn.hasDefer = true
 		fn.emit(&v)
-
-		// A deferred call can cause recovery from panic,
-		// and control resumes at the Recover block.
-		createRecoverBlock(fn)
 
 	case *ast.ReturnStmt:
 		var results []Value
@@ -2184,7 +2181,7 @@ func (b *builder) buildFunction(fn *Function) {
 	fn.createSyntacticParams(recvField, functype)
 	fn.exitBlock()
 	b.stmt(fn, body)
-	if cb := fn.currentBlock; cb != nil && (cb == fn.Blocks[0] || cb == fn.Recover || cb.Preds != nil) {
+	if cb := fn.currentBlock; cb != nil && (cb == fn.Blocks[0] || cb.Preds != nil) {
 		// Control fell off the end of the function's body block.
 		//
 		// Block optimizations eliminate the current block, if
