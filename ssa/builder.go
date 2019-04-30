@@ -305,7 +305,7 @@ func (b *builder) builtin(fn *Function, obj *types.Builtin, args []ast.Expr, typ
 			X:   emitConv(fn, b.expr(fn, args[0]), tEface),
 			pos: pos,
 		})
-		emitJump(fn, fn.Exit)
+		addEdge(fn.currentBlock, fn.Exit)
 		fn.currentBlock = fn.newBasicBlock("unreachable")
 		return vTrue // any non-nil Value will do
 	}
@@ -1619,6 +1619,7 @@ func (b *builder) selectStmt(fn *Function, s *ast.SelectStmt, label *lblock) {
 		fn.emit(&Panic{
 			X: emitConv(fn, stringConst("blocking select matched no case"), tEface),
 		})
+		addEdge(fn.currentBlock, fn.Exit)
 		fn.currentBlock = fn.newBasicBlock("unreachable")
 	}
 	emitJump(fn, done)

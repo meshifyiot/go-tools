@@ -1127,7 +1127,7 @@ type RunDefers struct {
 // The Panic instruction initiates a panic with value X.
 //
 // A Panic instruction must be the last instruction of its containing
-// BasicBlock, which must have no successors.
+// BasicBlock, which must have one successor, the exit block.
 //
 // NB: 'go panic(x)' and 'defer panic(x)' do not use this instruction;
 // they are treated as calls to a built-in function.

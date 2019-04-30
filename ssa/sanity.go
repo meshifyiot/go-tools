@@ -239,8 +239,8 @@ func (s *sanity) checkFinalInstr(instr Instruction) {
 		}
 
 	case *Panic:
-		if nsuccs := len(s.block.Succs); nsuccs != 0 {
-			s.errorf("Panic-terminated block has %d successors; expected none", nsuccs)
+		if nsuccs := len(s.block.Succs); nsuccs != 1 {
+			s.errorf("Panic-terminated block has %d successors; expected one", nsuccs)
 			return
 		}
 
