@@ -1,6 +1,6 @@
 package functions
 
-import "honnef.co/go/tools/ssa"
+import "github.com/meshifyiot/go-tools/ssa"
 
 // Terminates reports whether fn is supposed to return, that is if it
 // has at least one theoretic path that returns from the function.

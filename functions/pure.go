@@ -1,7 +1,7 @@
 package functions
 
 import (
-	"honnef.co/go/tools/ssa"
+	"github.com/meshifyiot/go-tools/ssa"
 )
 
 func filterDebug(instr []ssa.Instruction) []ssa.Instruction {

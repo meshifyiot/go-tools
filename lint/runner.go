@@ -41,10 +41,10 @@ import (
 	"golang.org/x/tools/go/analysis"
 	"golang.org/x/tools/go/packages"
 	"golang.org/x/tools/go/types/objectpath"
-	"honnef.co/go/tools/config"
-	"honnef.co/go/tools/facts"
-	"honnef.co/go/tools/internal/cache"
-	"honnef.co/go/tools/loader"
+	"github.com/meshifyiot/go-tools/config"
+	"github.com/meshifyiot/go-tools/facts"
+	"github.com/meshifyiot/go-tools/internal/cache"
+	"github.com/meshifyiot/go-tools/loader"
 )
 
 // If enabled, abuse of the go/analysis API will lead to panics

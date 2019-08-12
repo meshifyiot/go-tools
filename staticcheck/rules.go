@@ -14,9 +14,9 @@ import (
 	"unicode/utf8"
 
 	"golang.org/x/tools/go/analysis"
-	. "honnef.co/go/tools/lint/lintdsl"
-	"honnef.co/go/tools/ssa"
-	"honnef.co/go/tools/staticcheck/vrp"
+	. "github.com/meshifyiot/go-tools/lint/lintdsl"
+	"github.com/meshifyiot/go-tools/ssa"
+	"github.com/meshifyiot/go-tools/staticcheck/vrp"
 )
 
 const (

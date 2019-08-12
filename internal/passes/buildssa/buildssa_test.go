@@ -10,7 +10,7 @@ import (
 	"testing"
 
 	"golang.org/x/tools/go/analysis/analysistest"
-	"honnef.co/go/tools/internal/passes/buildssa"
+	"github.com/meshifyiot/go-tools/internal/passes/buildssa"
 )
 
 func Test(t *testing.T) {

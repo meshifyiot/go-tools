@@ -32,7 +32,7 @@ func checkout(sha string) {
 }
 
 func build(tool string) {
-	err := exec.Command("go", "build", "-o", "/tmp/"+tool, "honnef.co/go/tools/cmd/"+tool).Run()
+	err := exec.Command("go", "build", "-o", "/tmp/"+tool, "github.com/meshifyiot/go-tools/cmd/"+tool).Run()
 	if err != nil {
 		panic(err)
 	}

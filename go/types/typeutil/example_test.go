@@ -12,7 +12,7 @@ import (
 	"go/types"
 	"sort"
 
-	"honnef.co/go/tools/go/types/typeutil"
+	"github.com/meshifyiot/go-tools/go/types/typeutil"
 )
 
 func ExampleMap() {

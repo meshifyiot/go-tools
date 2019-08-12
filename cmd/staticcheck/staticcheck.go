@@ -1,17 +1,17 @@
 // staticcheck analyses Go code and makes it better.
-package main // import "honnef.co/go/tools/cmd/staticcheck"
+package main // import "github.com/meshifyiot/go-tools/cmd/staticcheck"
 
 import (
 	"log"
 	"os"
 
 	"golang.org/x/tools/go/analysis"
-	"honnef.co/go/tools/lint"
-	"honnef.co/go/tools/lint/lintutil"
-	"honnef.co/go/tools/simple"
-	"honnef.co/go/tools/staticcheck"
-	"honnef.co/go/tools/stylecheck"
-	"honnef.co/go/tools/unused"
+	"github.com/meshifyiot/go-tools/lint"
+	"github.com/meshifyiot/go-tools/lint/lintutil"
+	"github.com/meshifyiot/go-tools/simple"
+	"github.com/meshifyiot/go-tools/staticcheck"
+	"github.com/meshifyiot/go-tools/stylecheck"
+	"github.com/meshifyiot/go-tools/unused"
 )
 
 func main() {

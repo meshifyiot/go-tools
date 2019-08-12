@@ -4,9 +4,9 @@ import (
 	"reflect"
 
 	"golang.org/x/tools/go/analysis"
-	"honnef.co/go/tools/internal/passes/buildssa"
-	"honnef.co/go/tools/ssa"
-	"honnef.co/go/tools/staticcheck/vrp"
+	"github.com/meshifyiot/go-tools/internal/passes/buildssa"
+	"github.com/meshifyiot/go-tools/ssa"
+	"github.com/meshifyiot/go-tools/staticcheck/vrp"
 )
 
 var valueRangesAnalyzer = &analysis.Analyzer{

@@ -1,7 +1,7 @@
 package ssautil
 
 import (
-	"honnef.co/go/tools/ssa"
+	"github.com/meshifyiot/go-tools/ssa"
 )
 
 func Reachable(from, to *ssa.BasicBlock) bool {

@@ -5,9 +5,9 @@ import (
 
 	"golang.org/x/tools/go/analysis"
 	"golang.org/x/tools/go/analysis/passes/inspect"
-	"honnef.co/go/tools/facts"
-	"honnef.co/go/tools/internal/passes/buildssa"
-	"honnef.co/go/tools/lint/lintutil"
+	"github.com/meshifyiot/go-tools/facts"
+	"github.com/meshifyiot/go-tools/internal/passes/buildssa"
+	"github.com/meshifyiot/go-tools/lint/lintutil"
 )
 
 func newFlagSet() flag.FlagSet {

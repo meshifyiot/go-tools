@@ -5,7 +5,7 @@
 // https://developers.google.com/open-source/licenses/bsd.
 
 // Package lintutil provides helpers for writing linter command lines.
-package lintutil // import "honnef.co/go/tools/lint/lintutil"
+package lintutil // import "github.com/meshifyiot/go-tools/lint/lintutil"
 
 import (
 	"crypto/sha256"
@@ -25,11 +25,11 @@ import (
 	"strings"
 	"sync/atomic"
 
-	"honnef.co/go/tools/config"
-	"honnef.co/go/tools/internal/cache"
-	"honnef.co/go/tools/lint"
-	"honnef.co/go/tools/lint/lintutil/format"
-	"honnef.co/go/tools/version"
+	"github.com/meshifyiot/go-tools/config"
+	"github.com/meshifyiot/go-tools/internal/cache"
+	"github.com/meshifyiot/go-tools/lint"
+	"github.com/meshifyiot/go-tools/lint/lintutil/format"
+	"github.com/meshifyiot/go-tools/version"
 
 	"golang.org/x/tools/go/analysis"
 	"golang.org/x/tools/go/buildutil"

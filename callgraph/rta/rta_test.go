@@ -23,10 +23,10 @@ import (
 	"testing"
 
 	"golang.org/x/tools/go/loader"
-	"honnef.co/go/tools/callgraph"
-	"honnef.co/go/tools/callgraph/rta"
-	"honnef.co/go/tools/ssa"
-	"honnef.co/go/tools/ssa/ssautil"
+	"github.com/meshifyiot/go-tools/callgraph"
+	"github.com/meshifyiot/go-tools/callgraph/rta"
+	"github.com/meshifyiot/go-tools/ssa"
+	"github.com/meshifyiot/go-tools/ssa/ssautil"
 )
 
 var inputs = []string{

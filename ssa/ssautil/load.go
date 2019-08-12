@@ -13,7 +13,7 @@ import (
 
 	"golang.org/x/tools/go/loader"
 	"golang.org/x/tools/go/packages"
-	"honnef.co/go/tools/ssa"
+	"github.com/meshifyiot/go-tools/ssa"
 )
 
 // Packages creates an SSA program for a set of packages.

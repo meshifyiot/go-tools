@@ -1,5 +1,5 @@
 // Package simple contains a linter for Go source code.
-package simple // import "honnef.co/go/tools/simple"
+package simple // import "github.com/meshifyiot/go-tools/simple"
 
 import (
 	"fmt"
@@ -15,11 +15,11 @@ import (
 	"golang.org/x/tools/go/analysis/passes/inspect"
 	"golang.org/x/tools/go/ast/inspector"
 	"golang.org/x/tools/go/types/typeutil"
-	. "honnef.co/go/tools/arg"
-	"honnef.co/go/tools/internal/passes/buildssa"
-	"honnef.co/go/tools/internal/sharedcheck"
-	"honnef.co/go/tools/lint"
-	. "honnef.co/go/tools/lint/lintdsl"
+	. "github.com/meshifyiot/go-tools/arg"
+	"github.com/meshifyiot/go-tools/internal/passes/buildssa"
+	"github.com/meshifyiot/go-tools/internal/sharedcheck"
+	"github.com/meshifyiot/go-tools/lint"
+	. "github.com/meshifyiot/go-tools/lint/lintdsl"
 )
 
 func LintSingleCaseSelect(pass *analysis.Pass) (interface{}, error) {

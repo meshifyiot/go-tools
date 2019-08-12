@@ -14,9 +14,9 @@ import (
 	"strings"
 
 	"golang.org/x/tools/go/analysis"
-	"honnef.co/go/tools/facts"
-	"honnef.co/go/tools/lint"
-	"honnef.co/go/tools/ssa"
+	"github.com/meshifyiot/go-tools/facts"
+	"github.com/meshifyiot/go-tools/lint"
+	"github.com/meshifyiot/go-tools/ssa"
 )
 
 type packager interface {

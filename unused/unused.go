@@ -11,11 +11,11 @@ import (
 	"sync/atomic"
 
 	"golang.org/x/tools/go/analysis"
-	"honnef.co/go/tools/go/types/typeutil"
-	"honnef.co/go/tools/internal/passes/buildssa"
-	"honnef.co/go/tools/lint"
-	"honnef.co/go/tools/lint/lintdsl"
-	"honnef.co/go/tools/ssa"
+	"github.com/meshifyiot/go-tools/go/types/typeutil"
+	"github.com/meshifyiot/go-tools/internal/passes/buildssa"
+	"github.com/meshifyiot/go-tools/lint"
+	"github.com/meshifyiot/go-tools/lint/lintdsl"
+	"github.com/meshifyiot/go-tools/ssa"
 )
 
 // The graph we construct omits nodes along a path that do not

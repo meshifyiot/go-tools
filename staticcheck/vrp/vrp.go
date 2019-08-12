@@ -12,8 +12,8 @@ import (
 	"sort"
 	"strings"
 
-	"honnef.co/go/tools/lint"
-	"honnef.co/go/tools/ssa"
+	"github.com/meshifyiot/go-tools/lint"
+	"github.com/meshifyiot/go-tools/ssa"
 )
 
 type Future interface {

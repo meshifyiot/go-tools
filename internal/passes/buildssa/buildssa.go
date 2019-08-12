@@ -16,7 +16,7 @@ import (
 	"reflect"
 
 	"golang.org/x/tools/go/analysis"
-	"honnef.co/go/tools/ssa"
+	"github.com/meshifyiot/go-tools/ssa"
 )
 
 var Analyzer = &analysis.Analyzer{

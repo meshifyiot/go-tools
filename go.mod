@@ -1,4 +1,4 @@
-module honnef.co/go/tools
+module github.com/meshifyiot/go-tools
 
 go 1.11
 

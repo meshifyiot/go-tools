@@ -1,5 +1,5 @@
 // Package staticcheck contains a linter for Go source code.
-package staticcheck // import "honnef.co/go/tools/staticcheck"
+package staticcheck // import "github.com/meshifyiot/go-tools/staticcheck"
 
 import (
 	"fmt"
@@ -18,18 +18,18 @@ import (
 	texttemplate "text/template"
 	"unicode"
 
-	. "honnef.co/go/tools/arg"
-	"honnef.co/go/tools/deprecated"
-	"honnef.co/go/tools/facts"
-	"honnef.co/go/tools/functions"
-	"honnef.co/go/tools/internal/passes/buildssa"
-	"honnef.co/go/tools/internal/sharedcheck"
-	"honnef.co/go/tools/lint"
-	. "honnef.co/go/tools/lint/lintdsl"
-	"honnef.co/go/tools/printf"
-	"honnef.co/go/tools/ssa"
-	"honnef.co/go/tools/ssautil"
-	"honnef.co/go/tools/staticcheck/vrp"
+	. "github.com/meshifyiot/go-tools/arg"
+	"github.com/meshifyiot/go-tools/deprecated"
+	"github.com/meshifyiot/go-tools/facts"
+	"github.com/meshifyiot/go-tools/functions"
+	"github.com/meshifyiot/go-tools/internal/passes/buildssa"
+	"github.com/meshifyiot/go-tools/internal/sharedcheck"
+	"github.com/meshifyiot/go-tools/lint"
+	. "github.com/meshifyiot/go-tools/lint/lintdsl"
+	"github.com/meshifyiot/go-tools/printf"
+	"github.com/meshifyiot/go-tools/ssa"
+	"github.com/meshifyiot/go-tools/ssautil"
+	"github.com/meshifyiot/go-tools/staticcheck/vrp"
 
 	"golang.org/x/tools/go/analysis"
 	"golang.org/x/tools/go/analysis/passes/inspect"

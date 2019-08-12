@@ -20,8 +20,8 @@ import (
 	"testing"
 
 	"golang.org/x/tools/go/loader"
-	"honnef.co/go/tools/ssa"
-	"honnef.co/go/tools/ssa/ssautil"
+	"github.com/meshifyiot/go-tools/ssa"
+	"github.com/meshifyiot/go-tools/ssa/ssautil"
 )
 
 func isEmpty(f *ssa.Function) bool { return f.Blocks == nil }

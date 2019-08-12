@@ -21,15 +21,15 @@
 // and all concrete types are put into interfaces, it is sound to run on
 // partial programs, such as libraries without a main or test function.
 //
-package cha // import "honnef.co/go/tools/callgraph/cha"
+package cha // import "github.com/meshifyiot/go-tools/callgraph/cha"
 
 import (
 	"go/types"
 
 	"golang.org/x/tools/go/types/typeutil"
-	"honnef.co/go/tools/callgraph"
-	"honnef.co/go/tools/ssa"
-	"honnef.co/go/tools/ssa/ssautil"
+	"github.com/meshifyiot/go-tools/callgraph"
+	"github.com/meshifyiot/go-tools/ssa"
+	"github.com/meshifyiot/go-tools/ssa/ssautil"
 )
 
 // CallGraph computes the call graph of the specified program using the

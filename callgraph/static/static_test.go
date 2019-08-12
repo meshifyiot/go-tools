@@ -14,9 +14,9 @@ import (
 	"testing"
 
 	"golang.org/x/tools/go/loader"
-	"honnef.co/go/tools/callgraph"
-	"honnef.co/go/tools/callgraph/static"
-	"honnef.co/go/tools/ssa/ssautil"
+	"github.com/meshifyiot/go-tools/callgraph"
+	"github.com/meshifyiot/go-tools/callgraph/static"
+	"github.com/meshifyiot/go-tools/ssa/ssautil"
 )
 
 const input = `package P

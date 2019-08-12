@@ -10,8 +10,8 @@ import (
 	"unicode"
 
 	"golang.org/x/tools/go/analysis"
-	"honnef.co/go/tools/config"
-	. "honnef.co/go/tools/lint/lintdsl"
+	"github.com/meshifyiot/go-tools/config"
+	. "github.com/meshifyiot/go-tools/lint/lintdsl"
 )
 
 // knownNameExceptions is a set of names that are known to be exempt from naming checks.

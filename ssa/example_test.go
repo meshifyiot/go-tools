@@ -15,8 +15,8 @@ import (
 	"os"
 
 	"golang.org/x/tools/go/packages"
-	"honnef.co/go/tools/ssa"
-	"honnef.co/go/tools/ssa/ssautil"
+	"github.com/meshifyiot/go-tools/ssa"
+	"github.com/meshifyiot/go-tools/ssa/ssautil"
 )
 
 const hello = `

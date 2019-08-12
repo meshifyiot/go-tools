@@ -16,7 +16,7 @@ import (
 	"testing"
 
 	"golang.org/x/tools/go/packages"
-	"honnef.co/go/tools/ssa/ssautil"
+	"github.com/meshifyiot/go-tools/ssa/ssautil"
 )
 
 const hello = `package main

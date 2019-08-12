@@ -6,9 +6,9 @@ import (
 	"reflect"
 
 	"golang.org/x/tools/go/analysis"
-	"honnef.co/go/tools/functions"
-	"honnef.co/go/tools/internal/passes/buildssa"
-	"honnef.co/go/tools/ssa"
+	"github.com/meshifyiot/go-tools/functions"
+	"github.com/meshifyiot/go-tools/internal/passes/buildssa"
+	"github.com/meshifyiot/go-tools/ssa"
 )
 
 type IsPure struct{}

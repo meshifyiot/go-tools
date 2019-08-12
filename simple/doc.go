@@ -1,6 +1,6 @@
 package simple
 
-import "honnef.co/go/tools/lint"
+import "github.com/meshifyiot/go-tools/lint"
 
 var Docs = map[string]*lint.Documentation{
 	"S1000": &lint.Documentation{

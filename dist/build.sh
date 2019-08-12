@@ -2,7 +2,7 @@
 
 SYSTEMS=(windows linux freebsd darwin)
 ARCHS=(amd64 386)
-ROOT="$GOPATH/src/honnef.co/go/tools"
+ROOT="$GOPATH/src/github.com/meshifyiot/go-tools"
 
 rev="$1"
 if [ -z "$rev" ]; then
@@ -19,7 +19,7 @@ trap "{ rm -rf \"$wrk\"; }" EXIT
 cd "$wrk"
 
 go mod init foo
-GO111MODULE=on go get -d honnef.co/go/tools/cmd/staticcheck@"$rev"
+GO111MODULE=on go get -d github.com/meshifyiot/go-tools/cmd/staticcheck@"$rev"
 
 for os in ${SYSTEMS[@]}; do
     for arch in ${ARCHS[@]}; do
@@ -33,7 +33,7 @@ for os in ${SYSTEMS[@]}; do
         rm -rf "$d/staticcheck"
         mkdir "$d/staticcheck"
         cp "$ROOT/LICENSE" "$ROOT/LICENSE-THIRD-PARTY" "$d/staticcheck"
-        CGO_ENABLED=0 GOOS=$os GOARCH=$arch GO111MODULE=on go build -o "$d/staticcheck/$exe" honnef.co/go/tools/cmd/staticcheck
+        CGO_ENABLED=0 GOOS=$os GOARCH=$arch GO111MODULE=on go build -o "$d/staticcheck/$exe" github.com/meshifyiot/go-tools/cmd/staticcheck
         (
             cd "$d"
             tar -czf "$target.tar.gz" staticcheck

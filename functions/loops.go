@@ -1,6 +1,6 @@
 package functions
 
-import "honnef.co/go/tools/ssa"
+import "github.com/meshifyiot/go-tools/ssa"
 
 type Loop struct{ ssa.BlockSet }
 

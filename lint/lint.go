@@ -1,5 +1,5 @@
 // Package lint provides the foundation for tools like staticcheck
-package lint // import "honnef.co/go/tools/lint"
+package lint // import "github.com/meshifyiot/go-tools/lint"
 
 import (
 	"bytes"
@@ -16,7 +16,7 @@ import (
 
 	"golang.org/x/tools/go/analysis"
 	"golang.org/x/tools/go/packages"
-	"honnef.co/go/tools/config"
+	"github.com/meshifyiot/go-tools/config"
 )
 
 type Documentation struct {

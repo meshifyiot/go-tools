@@ -40,7 +40,7 @@
 // cmd/callgraph tool on its own source takes ~2.1s for RTA and ~5.4s
 // for points-to analysis.
 //
-package rta // import "honnef.co/go/tools/callgraph/rta"
+package rta // import "github.com/meshifyiot/go-tools/callgraph/rta"
 
 // TODO(adonovan): test it by connecting it to the interpreter and
 // replacing all "unreachable" functions by a special intrinsic, and
@@ -51,8 +51,8 @@ import (
 	"go/types"
 
 	"golang.org/x/tools/go/types/typeutil"
-	"honnef.co/go/tools/callgraph"
-	"honnef.co/go/tools/ssa"
+	"github.com/meshifyiot/go-tools/callgraph"
+	"github.com/meshifyiot/go-tools/ssa"
 )
 
 // A Result holds the results of Rapid Type Analysis, which includes the

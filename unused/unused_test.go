@@ -15,7 +15,7 @@ import (
 	"golang.org/x/tools/go/analysis"
 	"golang.org/x/tools/go/analysis/analysistest"
 	"golang.org/x/tools/go/packages"
-	"honnef.co/go/tools/lint"
+	"github.com/meshifyiot/go-tools/lint"
 )
 
 // parseExpectations parses the content of a "// want ..." comment

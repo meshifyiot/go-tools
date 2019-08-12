@@ -5,9 +5,9 @@ import (
 	"go/types"
 
 	"golang.org/x/tools/go/analysis"
-	"honnef.co/go/tools/internal/passes/buildssa"
-	. "honnef.co/go/tools/lint/lintdsl"
-	"honnef.co/go/tools/ssa"
+	"github.com/meshifyiot/go-tools/internal/passes/buildssa"
+	. "github.com/meshifyiot/go-tools/lint/lintdsl"
+	"github.com/meshifyiot/go-tools/ssa"
 )
 
 func CheckRangeStringRunes(pass *analysis.Pass) (interface{}, error) {

@@ -10,9 +10,9 @@ import (
 	"log"
 	"os"
 
-	"honnef.co/go/tools/gcsizes"
-	st "honnef.co/go/tools/structlayout"
-	"honnef.co/go/tools/version"
+	"github.com/meshifyiot/go-tools/gcsizes"
+	st "github.com/meshifyiot/go-tools/structlayout"
+	"github.com/meshifyiot/go-tools/version"
 
 	"golang.org/x/tools/go/loader"
 )
